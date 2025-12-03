@@ -15,7 +15,10 @@
 ---
 
 ## 🛠 기술 스택
-
+|구분|사용기술|
+|---|---|
+|Frontend|React, Tailwind CSS, Axios, React Router, STOMP.js, SockJS|
+|Backend|Spring Boot, MariaDB, JPA, Spring WebSocket|
 
 ---
 
