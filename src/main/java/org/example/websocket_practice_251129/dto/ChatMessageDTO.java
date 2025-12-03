@@ -6,6 +6,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.example.websocket_practice_251129.domain.enums.ChatType;
 
+import java.time.LocalDateTime;
+
 @Data
 @Builder
 @NoArgsConstructor
@@ -23,4 +25,8 @@ public class ChatMessageDTO {
     private ChatType chatType;
 
     private Long chatroomId;
+
+    private LocalDateTime createdAt;
+
+    private LocalDateTime updatedAt;
 }

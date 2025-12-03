@@ -7,6 +7,7 @@ import org.example.websocket_practice_251129.service.chatMessage.ChatMessageServ
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @RestController
@@ -26,7 +27,7 @@ public class ChatRestController { // 채팅 관련 송수신 외의 기능들
         return "REMOVE MESSAGE SUCCESS";
     }
 
-    // 채팅 메시지 반환 - chatrommId 값으로 해당하는 메시지들 전체 반환
+    // 채팅 메시지 반환 - chatrommId 값으로 해당하는 메시지들 전체 반환 - (수정) 채팅방 접속 시간을 받은 후 접속 시간 이후에 저장된 메시지만 반환
     @GetMapping("/{id}")
     public ResponseEntity<List<ChatMessageDTO>> getChatMessages(@PathVariable Long id) {
 

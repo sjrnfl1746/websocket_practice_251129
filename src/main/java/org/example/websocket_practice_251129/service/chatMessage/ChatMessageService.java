@@ -2,6 +2,7 @@ package org.example.websocket_practice_251129.service.chatMessage;
 
 import org.example.websocket_practice_251129.dto.ChatMessageDTO;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 public interface ChatMessageService {

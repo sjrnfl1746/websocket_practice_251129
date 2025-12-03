@@ -8,9 +8,11 @@ import org.example.websocket_practice_251129.domain.Chatroom;
 import org.example.websocket_practice_251129.dto.ChatMessageDTO;
 import org.example.websocket_practice_251129.repository.ChatMessageRepository;
 import org.example.websocket_practice_251129.repository.ChatroomRepository;
+import org.example.websocket_practice_251129.repository.queryDSL.ChatMessageRepositoryCustom;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,6 +22,7 @@ import java.util.List;
 public class ChatMessageServiceImpl implements ChatMessageService {
 
     private final ChatMessageRepository chatMessageRepository;
+    private final ChatMessageRepositoryCustom chatMessageRepositoryCustom;
     private final ChatroomRepository chatroomRepository;
     private final ModelMapper modelMapper;
 
