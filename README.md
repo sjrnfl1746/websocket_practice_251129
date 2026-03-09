@@ -23,7 +23,7 @@
 ---
 
 ## 📸 실행 화면
-![Uploading 화면 기록 2026-03-09 오후 4.30.10.gif…]()
+![Image](https://github.com/user-attachments/assets/d61379b8-1f3e-478f-968d-58b67e4ea655)
 
 
 ---
